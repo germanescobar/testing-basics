@@ -1,5 +1,3 @@
-const { test } = require('@jest/globals')
-const { describe } = require('yargs')
 const charCounter = require('./charCounter')
 
 test('counts the number of characters', function() {
