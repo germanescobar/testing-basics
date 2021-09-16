@@ -1,5 +1,5 @@
-const { test, expect, it } = require('@jest/globals')
-const { equal } = require('assert')
+const { test } = require('@jest/globals')
+const { describe } = require('yargs')
 const charCounter = require('./charCounter')
 
 test('counts the number of characters', function() {
@@ -10,7 +10,8 @@ test('counts the number of characters', function() {
   expect(count).toBe(4)
 })
 
-// test
-it('returns 0 if string is empty', function() {
-  expect(charCounter("")).toBe(0) // assertion
+describe('charCounter', function() {
+  test('returns 0 if string is empty', function() {
+    expect(charCounter("")).toBe(0) // assertion
+  })
 })
